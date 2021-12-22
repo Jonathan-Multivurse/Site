@@ -3,7 +3,6 @@ import * as React from 'react'
 // import { FacebookRounded, Instagram, LinkedIn, Twitter, YouTube, } from '@mui/icons-material'
 import { styled } from '@mui/material/styles'
 import Link from '@mui/material/Link'
-import { IconButton } from '@mui/material'
 const FOOTER = styled(Grid)(() => ({
     background: 'transparent linear-gradient(180deg, #3B3B3B 0%, #000000 100%) 0% 0% no-repeat padding-box',
     boxShadow: '0px 3px 6px #00000029',
@@ -39,7 +38,7 @@ export default function Footer() {
                             </Grid>
                             <Grid container spacing={3} justifyContent='center'>
                                 <Grid item>
-                                    <Link href='https://www.upwork.com/agencies/~01995b58ae326ec620' ><img src="/assets/upwork_icon.png" height="50"></img></Link>
+                                    <Link href='https://www.upwork.com/agencies/~01995b58ae326ec620' ><img src="/assets/upwork_icon.png" height="50" alt="Upwork"></img></Link>
                                 </Grid>
                                 {/* <Grid item>
                                     <Link href='https://twitter.com/Multivurse_Tech' style={{ color: '#fff' }} > <Twitter /> </Link>

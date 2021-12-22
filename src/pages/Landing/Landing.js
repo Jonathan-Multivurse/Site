@@ -21,7 +21,7 @@ const BlueImageContainer = styled(Grid)(({ theme }) => ({
 	top: '55%',
 	right: '20%',
 	[theme.breakpoints.down('md')]: {
-		bottom: '-45%',
+		bottom: '-55%',
 		left: '20%'
 
 	}
@@ -84,12 +84,12 @@ function Landing() {
 					<Grid container justifyContent='center' alignItems='center' style={{justifyContent:'center', alignItems:'center', paddingLeft:'50px', marginTop: '50px'}}>
 						<Grid container fluid>
 							<Grid item lg={12}>
-							<MainHeading >Launch Software Projects, Today!</MainHeading>
+							<MainHeading >Full Stack Engineer</MainHeading>
 							</Grid>
 						</Grid>
 						<Grid container  style={{ marginTop: '24px', paddingRight: '30px'}}>
 							<Grid item>
-							<Paragraph>We help design, build, and maintain software across multiple technologies and industries.</Paragraph>
+							<Paragraph>I design, build, and maintain software across multiple technologies and industries.</Paragraph>
 							</Grid>
 						</Grid>
 						<Grid container spacing={3} style={{paddingRight:'75px'}}>
@@ -109,7 +109,7 @@ function Landing() {
 							<div >
 								<Grid item xs={7} style={{ position: 'relative'}}>
 									<img
-										src="/assets/One.png"
+										src="/assets/headshot.png"
 										width='100%'
 										height='100%'
 										alt="Multivurse"
@@ -121,7 +121,7 @@ function Landing() {
 									<Grid item xs={7}>
 										<ImageContainer>
 											<img
-												src="/assets/two.png"
+												src="/assets/suit.png"
 												width='100%'
 												height='100%'
 												alt="Multivurse"
@@ -134,7 +134,7 @@ function Landing() {
 								<Grid item xs={7}>
 									<BlueImageContainer>
 										<img
-											src="/assets/three.png"
+											src="/assets/coffee.png"
 											width='100%'
 											height='100%'
 											alt="Multivurse"
