@@ -18,6 +18,18 @@ const Circle = styled(Grid)(() => ({
 
 }))
 
+const Paragraph = styled('p')(({ theme }) => ({
+    textAlign: 'justify',
+    color: '#222',
+    fontFamily: 'Roboto',
+    fontWeight: 300,
+    letterSpacing: 1,
+    lineHeight: 2,
+    [theme.breakpoints.down('md')]: {
+        
+    }
+}))
+
 
 export default function Products() {
     const [selectedPublishing, setSelectedPublishing] = useState(0)
@@ -25,17 +37,17 @@ export default function Products() {
 
     const smallScreen = useMediaQuery(theme => theme.breakpoints.down('sm')) 
     return (
-        <Grid style={{ color: '#003366' }} id="products">
+        <Grid style={{ color: '#222' }} id="products">
             <Grid container justifyContent='end'>
                 <Grid xs={10} md={5} item>
-                    <RightTitleBar title='PRODUCTS' content='EXPLORE OUR PROJECT PORFOLIO' />
+                    <RightTitleBar title='EXPERTISE' content='AREAS OF SPECIALIZATION' />
                 </Grid>
             </Grid>
             <Grid container>
                 <Grid item md={5} style={{ paddingLeft: '50px', paddingRight: '50px', marginTop:'100px' }}>
                     <Grid container>
-                        <h5 style={{ textAlign: 'left', fontWeight: 'normal' }}>PUBLISHING</h5>
-                        <p style={{ textAlign: 'justify', marginTop: '10px', lineHeight: '200%', }}>{PUBLISHING_PARAGRAPH}</p>
+                        <h5 style={{ textAlign: 'left', fontWeight: '300', color: '#222', letterSpacing: 1, paddingBottom: 10}}>Full Stack Engineering</h5>
+                        <Paragraph> <p style={{textAlign: 'justify', color: '#222', fontFamily: 'Roboto', fontWeight: 300, letterSpacing: 1, lineHeight: 2}}>{PUBLISHING_PARAGRAPH}</p></Paragraph>
                         <hr style={{ width: '100%' }}></hr>
                     </Grid>
                     <Grid container className='justify-content-center' style={{ marginTop: 20 }}>
@@ -50,8 +62,8 @@ export default function Products() {
                         </Grid>
                     </Grid>
                     <Grid container style={{ marginTop: '20px', justifyContent: 'center' }}>
-                        <h5 style={{ fontWeight: 'normal' }}>{PUBLISHING_LIST[selectedPublishing].heading}</h5>
-                        <p style={{ textAlign: 'justify', lineHeight: '200%' }}>{PUBLISHING_LIST[selectedPublishing].content}</p>
+                        <h5 style={{ fontWeight: '300', color: '#222', letterSpacing: 1, fontSize: 18, paddingBottom: 15  }}>{PUBLISHING_LIST[selectedPublishing].heading}</h5>
+                        <Paragraph> <p style={{ textAlign: 'justify', color: '#222', fontFamily: 'Roboto', fontWeight: 300, letterSpacing: 1, lineHeight: 2 }}>{PUBLISHING_LIST[selectedPublishing].content}</p></Paragraph>
                     </Grid>
                     <Grid container columnGap={smallScreen ? 2 : 1} justifyContent='center' style={{ marginTop: '32px' }}>
                         <style>
@@ -92,8 +104,8 @@ export default function Products() {
                 </Grid>
                 <Grid item md={5} style={{ paddingLeft: '50px', paddingRight: '50px', marginTop:'100px' }}>
                     <Grid container >
-                        <h5 style={{ textAlign: 'left', fontWeight: 'normal' }}>BUSINESS</h5>
-                        <p style={{ textAlign: 'justify', marginTop: '10px', lineHeight: '200%' }}>{BUSINESS_PARAGRAPH}</p>
+                        <h5 style={{ textAlign: 'left', fontWeight: '300', color: '#222', letterSpacing: 1, paddingBottom: 10 }}>Data Science</h5>
+                       <Paragraph> <p style={{textAlign: 'justify', color: '#222', fontFamily: 'Roboto', fontWeight: 300, letterSpacing: 1, lineHeight: 2 }}>{BUSINESS_PARAGRAPH}</p></Paragraph>
                         <hr style={{ width: '100%' }}></hr>
                     </Grid>
                     <Grid container justifyContent='center' style={{ marginTop: 20 }}>
@@ -107,8 +119,8 @@ export default function Products() {
                         </Grid>
                     </Grid>
                     <Grid container style={{ marginTop: '20px', justifyContent: 'center' }}>
-                        <h5 style={{ fontWeight: 'normal' }} >{BUSINESS_LIST[selectedBusiness].heading}</h5>
-                        <p style={{ textAlign: 'justify', lineHeight: '200%' }}>{BUSINESS_LIST[selectedBusiness].content}</p>
+                        <h5 style={{fontWeight: '300', color: '#222', letterSpacing: 1, fontSize: 18, paddingBottom: 15 }} >{BUSINESS_LIST[selectedBusiness].heading}</h5>
+                        <p style={{ textAlign: 'justify', color: '#222', fontFamily: 'Roboto', fontWeight: 300, letterSpacing: 1, lineHeight: 2 }}>{BUSINESS_LIST[selectedBusiness].content}</p>
 
                     </Grid>
                     <Grid container columnGap={smallScreen ? 2 : 1} justifyContent='center'  style={{ marginTop: '32px' }}>
@@ -149,9 +161,9 @@ export default function Products() {
                     <Grid container className='justify-content-end'>
                         <img
                             src='/assets/R1-Cropped.png'
-                            width='60%'
+                            width='55%'
                             alt=''
-                            height='75%' />
+                            height='50%' />
                     </Grid>
                 </EggShapedImageContainer>
             </Grid>

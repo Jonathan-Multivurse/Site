@@ -8,7 +8,7 @@ import { EggShapedImageContainer } from '../../../components/EggShapedImageConta
 import { useMediaQuery } from '@mui/material'
 
 const CircledImage = styled('img')(({ theme }) => ({
-    border: '1px solid #003366',
+    border: '1px solid #222',
     borderRadius: '100%',
     padding: '15px',
     objectFit: 'cover',
@@ -18,25 +18,38 @@ const CircledImage = styled('img')(({ theme }) => ({
         height: '60px',
         width:'60px',
         padding:'10px'
-    }
+    },
+    
 }))
 const Paragraph = styled('p')(({ theme }) => ({
     textAlign: 'justify',
-    color: '#003366',
+    color: '#222',
     fontFamily: 'Roboto',
     fontWeight: 300,
     letterSpacing: 1,
     lineHeight: 2,
     [theme.breakpoints.down('md')]: {
-        display: 'none'
+        
     }
 }))
-const ImageContainer = styled('img')(({ theme }) => ({
+const ImageContainer1 = styled('img')(({ theme }) => ({
     height: '325px',
     width: '100%',
     borderRadius: '16px',
     objectFit: 'cover',
     marginTop: '16px',
+    [theme.breakpoints.down('md')]: {
+        display: 'none',
+    }
+}))
+
+const ImageContainer2 = styled('img')(({ theme }) => ({
+    height: '325px',
+    width: '100%',
+    borderRadius: '16px',
+    objectFit: 'cover',
+    marginTop: '16px',
+    
 }))
 
 const Heading = styled('h1')(({ theme }) => ({
@@ -49,17 +62,21 @@ const Heading = styled('h1')(({ theme }) => ({
     fontSize: 'xxx-large',
     marginTop: '32px',
     marginBottom: '32px',
-    WebkitTextStrokeColor: '#003366',
-    WebkitTextStrokeWidth: '0.8px'
+    WebkitTextStrokeColor: '#222',
+    WebkitTextStrokeWidth: '0.8px',
+    [theme.breakpoints.down('md')]: {
+        marginTop: '10px',
+        marginBottom: '10px',
+    }
 
 }))
 
 const Line = styled(Grid)(({ theme}) => ({
     [theme.breakpoints.down('md')]: {
-        borderTop: '1px solid #003366'
+        borderTop: '1px solid #222'
     },
     [theme.breakpoints.up('md')]: {
-        borderRight: '1px solid #003366'
+        borderRight: '1px solid #222'
     }
 }))
 
@@ -92,7 +109,7 @@ export default function Company() {
         <div style={{ marginTop: '60px' }} id="company">
             <Grid container>
                 <Grid item md={5} xs={10}>
-                    <LeftTitleBar title={'MULTIVURSE'} content={'WE BUILD YOUR TOOLS, YOU CHANGE THE WORLD'} />
+                    <LeftTitleBar title={'CRAFT'} content={'WHAT I DO IN A NUTSHELL'} />
                 </Grid>
             </Grid>
             <Grid container style={{ marginTop: '70px', paddingRight: '50px' }}>
@@ -119,7 +136,7 @@ export default function Company() {
                                         }`
                                     }
                                 </style>
-                                <Grid item xs={3} style={{ marginBottom: '50px' }}>
+                                <Grid item sm={2} xs={4} style={{ marginBottom: '50px' }}>
                                     <Button onClick={() => setSelected(0)} style={{ background: 'transparent' }} disableRipple>
                                         <Grid container className={selected === 0 ? 'selected' : ''} >
                                             <CircledImage
@@ -128,12 +145,12 @@ export default function Company() {
                                         </Grid>
                                     </Button>
                                 </Grid>
-                                <Line item xs={1} style={{  alignSelf: 'center', marginBottom: '60px', marginTop: '40px', }}>
+                                <Line item sm={1} xs={0} style={{  alignSelf: 'center', marginBottom: '60px', marginTop: '40px', }}>
                                     <Grid container>
                                         <hr></hr>
                                     </Grid>
                                 </Line>
-                                <Grid item xs={3} style={{ marginBottom: '50px' }}>
+                                <Grid item  sm={2} xs={4} style={{ marginBottom: '50px' }}>
                                     <Button onClick={() => setSelected(1)} style={{ background: 'transparent' }} disableRipple>
                                         <Grid container className={selected === 1 ? 'selected' : ''} >
                                             <CircledImage
@@ -142,13 +159,13 @@ export default function Company() {
                                         </Grid>
                                     </Button>
                                 </Grid>
-                                <Line item xs={1} style={{ alignSelf: 'center', marginBottom: '60px', marginTop: '40px' }} >
+                                <Line item sm={1} xs={0} style={{ alignSelf: 'center', marginBottom: '60px', marginTop: '40px' ,}} >
                                     <Grid container>
                                         <hr></hr>
                                     </Grid>
                                 </Line>
 
-                                <Grid item xs={3}>
+                                <Grid item  sm={2} xs={4}>
                                     <Button onClick={() => setSelected(2)} style={{ background: 'transparent' }} disableRipple>
                                         <Grid container className={selected === 2 ? 'selected' : ''} >
                                             <CircledImage
@@ -162,26 +179,26 @@ export default function Company() {
                         <Grid item xs={12} md={8} style={{paddingLeft:'50px'}}>
                             <Grid>
                                 <Grid>
-                                    <Paragraph style={{ textAlign: 'justify', color: '#003366', fontFamily: 'Roboto', fontWeight: 300, letterSpacing: 1, lineHeight: 2, }}>{CONTENT[selected].paragraph}</Paragraph>
+                                    <Paragraph style={{ textAlign: 'justify', color: '#222', fontFamily: 'Roboto', fontWeight: 300, letterSpacing: 1, lineHeight: 2, }}>{CONTENT[selected].paragraph}</Paragraph>
                                     <Grid container>
                                         <Grid item xs={8} lg={4}>
                                             <Heading >{CONTENT[selected].heading}</Heading>
                                         </Grid>
                                         <Grid item xs={4} lg={8}  className='align-self-center'>
-                                            <hr style={{ color: "#003366", width: '98%', marginRight: '16px' }}></hr>
+                                            <hr style={{ width: '98%', marginRight: '16px', height: 1 }}></hr>
                                         </Grid>
                                     </Grid>
 
                                 </Grid>
                                 <Grid container spacing={2} style={{ marginTop: '8px' }}>
                                     <Grid item xs={4}>
-                                        <ImageContainer
+                                        <ImageContainer1
                                             src={CONTENT[selected].image1}
                                             alt='design'
                                         />
                                     </Grid>
-                                    <Grid item xs={8}>
-                                        <ImageContainer
+                                    <Grid item md={8} xs={12}>
+                                        <ImageContainer2
                                             src={CONTENT[selected].image2}
                                             alt='design'
                                         />

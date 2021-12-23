@@ -1,14 +1,14 @@
-const HEIGHT = '83px'
-const WIDTH = '83px'
+const HEIGHT = '80px'
+const WIDTH = '80px'
 
 export function ServiceImage({ source }) {
     return (
         <img
             style={{
-                border: '1px solid #003366',
+                border: '1px solid #222',
                 borderRadius: '16px',
-                padding: '10px',
                 objectFit:'cover',
+                padding: '2px'
                 
             }}
             src={source}

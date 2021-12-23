@@ -11,10 +11,10 @@ export default function Services() {
         <Grid container id="services">
             <Grid container>
                 <Grid item md={5} xs={10} >
-                    <LeftTitleBar title={'SERVICES'} content={'QUALITY SOFTWARE DEVELOPMENT FOR EVERYONE'} />
+                    <LeftTitleBar title={'SKILLS'} content={'CORE TECHNICAL ABILITIES'} />
                 </Grid>
             </Grid>
-            <Grid container style={{ marginTop: '50px' }}>
+            <Grid container style={{ marginTop: '75px' }}>
                 <Grid item xs={5}>
                     <Grid container justifyContent='center'>
 
@@ -22,9 +22,9 @@ export default function Services() {
                             <Grid container  >
                                 <img
                                     src='/assets/P1-Cropped.png'
-                                    width='50%'
+                                    width='60%'
                                     alt=''
-                                    height='50%'
+                                    height='60%'
                                 />
                             </Grid>
                         </EggShapedImageContainer>
@@ -45,7 +45,7 @@ export default function Services() {
                                     <Button onClick={() => setSelectedService(0)} style={{ background: 'transparent' }} disableRipple>
                                         <Grid container style={{ margin: 8 }} className={selectedService === 0 ? 'selected-service' : ''}>
                                             <ServiceImage
-                                                source='/assets/web-design.png'
+                                                source='/assets/reactlogo.png'
                                             />
                                         </Grid>
                                     </Button>
@@ -54,7 +54,7 @@ export default function Services() {
                                     <Button onClick={() => setSelectedService(1)} style={{ background: 'transparent' }} disableRipple>
                                         <Grid container style={{ margin: 8 }} className={selectedService === 1 ? 'selected-service' : ''}>
                                             <ServiceImage
-                                                source='/assets/blockchain.png'
+                                                source='/assets/flutter.jpeg'
                                             />
                                         </Grid>
                                     </Button>
@@ -67,7 +67,7 @@ export default function Services() {
                                     <Button onClick={() => setSelectedService(2)} style={{ background: 'transparent' }} disableRipple>
                                         <Grid container style={{ margin: 8 }} className={selectedService === 2 ? 'selected-service' : ''}>
                                             <ServiceImage
-                                                source='/assets/artificial-intelligence.png'
+                                                source='/assets/nodejslogo.png'
                                             />
                                         </Grid>
                                     </Button>
@@ -77,7 +77,7 @@ export default function Services() {
                                     <Button onClick={() => setSelectedService(3)} style={{ background: 'transparent' }} disableRipple>
                                         <Grid container style={{ margin: 8 }} className={selectedService === 3 ? 'selected-service' : ''}>
                                             <ServiceImage
-                                                source='/assets/computer.png'
+                                                source='/assets/django.png'
                                             />
                                         </Grid>
                                     </Button>
@@ -89,7 +89,7 @@ export default function Services() {
                                     <Button onClick={() => setSelectedService(4)} style={{ background: 'transparent' }} disableRipple >
                                         <Grid container style={{ margin: 8 }} className={selectedService === 4 ? 'selected-service' : ''}>
                                             <ServiceImage
-                                                source='/assets/cyber-security.png'
+                                                source='/assets/graphql.png'
                                             />
                                         </Grid>
                                     </Button>
@@ -98,7 +98,7 @@ export default function Services() {
                                     <Button onClick={() => setSelectedService(5)} style={{ background: 'transparent' }} disableRipple>
                                         <Grid container style={{ margin: 8 }} className={selectedService === 5 ? 'selected-service' : ''}>
                                             <ServiceImage
-                                                source='/assets/analysis.png'
+                                                source='/assets/pandas.png'
                                             />
                                         </Grid>
                                     </Button>
@@ -110,7 +110,7 @@ export default function Services() {
                                     <Button onClick={() => setSelectedService(6)} style={{ background: 'transparent' }} disableRipple>
                                         <Grid container style={{ margin: 8 }} className={selectedService === 6 ? 'selected-service' : ''}>
                                             <ServiceImage
-                                                source='/assets/graphic-tablet.png'
+                                                source='/assets/pyspark.jpeg'
                                             />
                                         </Grid>
                                     </Button>
@@ -119,7 +119,7 @@ export default function Services() {
                                     <Button onClick={() => setSelectedService(7)} style={{ background: 'transparent' }} disableRipple>
                                         <Grid contaier style={{ margin: 8 }} className={selectedService === 7 ? 'selected-service' : ''}>
                                             <ServiceImage
-                                                source='/assets/robot.png'
+                                                source='/assets/TenserFlow.jpeg'
                                             />
                                         </Grid>
                                     </Button>
@@ -131,7 +131,7 @@ export default function Services() {
                                         <Grid container style={{ margin: 8 }} className={selectedService === 8 ? 'selected-service' : ''}>
                                             <ServiceImage
                                                 source
-                                                ='/assets/vr-glasses.png'
+                                                ='/assets/pytorch.png'
                                             />
                                         </Grid>
                                     </Button>
@@ -140,7 +140,7 @@ export default function Services() {
                                     <Button onClick={() => setSelectedService(9)} style={{ background: 'transparent' }} disableRipple>
                                         <Grid continer style={{ margin: 8 }} className={selectedService === 9 ? 'selected-service' : ''}>
                                             <ServiceImage
-                                                source='/assets/internet-of-things.png'
+                                                source='/assets/gcp.jpeg'
                                             />
                                         </Grid>
                                     </Button>
@@ -152,18 +152,13 @@ export default function Services() {
                 <Grid item xs={7} style={{ marginTop: '20px' }}>
                     <Grid container style={{ paddingRight: '30px' }}>
                         <Grid item xs={8}>
-                            <h5 style={{ textAlign: 'left', fontFamily: 'helvetica', color: '#003366' }}>{SERVICES[selectedService].heading}</h5>
+                            <h5 style={{ textAlign: 'left', color: '#222', fontFamily: 'Roboto', fontSize: 20, fontWeight: 400, letterSpacing: 2 }}>{SERVICES[selectedService].heading}</h5>
                             <hr width='80%'></hr>
                         </Grid>
-                        <Grid item xs={4}>
-                            <Button
-                                style={{ height: '60px', color: '#fff', width: '100%', paddingLeft: '20%', paddingRight: '20%', borderRadius: '8px', border: '1px solid #003366', background: 'transparent linear-gradient(180deg, #000000 0%, #3B3B3B 100%) 0% 0% no-repeat padding-box' }}
-                            >EXPLORE</Button>
-                        </Grid>
                     </Grid>
-                    <Grid container style={{ paddingRight: '30px' }}>
-                        <Grid item style={{ textAlign: 'justify', color: '#003366', marginTop: '75px', fontFamily: 'Roboto', fontWeight: '300'}}>
-                            <p style={{ lineHeight: '200%' }}>{SERVICES[selectedService].content}</p>
+                    <Grid container md={9} sm={9} xs={10}>
+                        <Grid item style={{ textAlign: 'justify', color: '#222', fontFamily: 'Roboto', fontWeight: 300, letterSpacing: 1, lineHeight: 2, marginTop: 75 }}>
+                            <p >{SERVICES[selectedService].content}</p>
                         </Grid>
                     </Grid>
 

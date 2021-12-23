@@ -37,8 +37,8 @@ export default function Work() {
     return (
         <Grid id="work">
             <Grid container justifyContent='end'>
-                <Grid xs={12} sm={12} md={7} item>
-                    <RightTitleBar title='WORK' content='OUR CUSTOMERS DELIGHT IN WHAT WE DO' />
+                <Grid xs={10} md={5} item>
+                    <RightTitleBar title='PORTFOLIO' content='PAST PROJECTS I WORKED ON' />
                 </Grid>
             </Grid>
             <Grid container>

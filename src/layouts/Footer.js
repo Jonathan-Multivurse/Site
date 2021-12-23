@@ -28,9 +28,9 @@ export default function Footer() {
                         <Grid item>
                             <Grid container>
                                 <Grid item>
-                                    <Grid container style={{ justifyContent: 'center', alignItems: 'center', paddingBottom: '40px' }}>
+                                    <Grid container style={{ justifyContent: 'center', alignItems: 'center', paddingBottom: '20px' }}>
                                         <Grid item>
-                                            <h6 style={{ letterSpacing: 1.2, fontWeight: 300, paddingBottom: 20 }}>MULTIVURSE DEVELOPMENT</h6>
+                                            <h6 style={{ letterSpacing: 1.2, fontWeight: 300, paddingBottom: 20 }}>JONATHAN DANIELS</h6>
                                             <hr style={{ color: "#BF0032FF", height: 2, textAlign: 'center', background: 'transparent radial-gradient(closest-side at 50% 50%, #FF0091 70%, #0040FF 100%) 0% 0% no-repeat padding-box', marginTop: '24px', marginBottom: '24px' }}></hr>
                                         </Grid>
                                     </Grid>
@@ -38,31 +38,20 @@ export default function Footer() {
                             </Grid>
                             <Grid container spacing={3} justifyContent='center'>
                                 <Grid item>
-                                    <Link href='https://www.upwork.com/agencies/~01995b58ae326ec620' ><img src="/assets/upwork_icon.png" height="50" alt="Upwork"></img></Link>
+                                    <Link href='https://github.com/Jonathan-Multivurse' ><img src="/assets/J-logo.png" height="50" alt="Upwork"></img></Link>
                                 </Grid>
-                                {/* <Grid item>
-                                    <Link href='https://twitter.com/Multivurse_Tech' style={{ color: '#fff' }} > <Twitter /> </Link>
-                                </Grid>
-                                <Grid item>
-                                    <Link href='https://www.linkedin.com/company/multivurse/' style={{color: "#fff"}}> <LinkedIn /></Link>
-                                </Grid>
-                                <Grid item>
-                                    <Link href='https://www.instagram.com/multivurse_tech/' style={{color: '#fff'}} ><Instagram /></Link>
-                                </Grid>
-                                <Grid item>
-                                    <YouTube />
-                                </Grid> */}
+                                
                             </Grid>
                         </Grid>
                     </Grid>
                 </Grid>
                 <Grid item xs={12} md={5} className='align-self-center'>
                     <address >
-                        <p style={{ fontWeight: 300, fontSize: 14, paddingTop: 15, letterSpacing: 0.5 }}>jonathan2daniels@gmail.com</p>
+                        <p style={{ fontWeight: 300, fontSize: 14, paddingTop: 15, letterSpacing: 0.5 }}>Email: jonathan2daniels@gmail.com</p>
                         <br />
-                        <p style={{ fontWeight: 300, fontSize: 13, letterSpacing: 0.6 }}>Upwork, Online Work Platform | Planet Earth</p>
-                        <p style={{ fontWeight: 300, fontSize: 13, letterSpacing: 0.5 }}>Home, And Sometimes Cafes | Vancouver, BC</p>
-                        <p style={{ fontWeight: 300, fontSize: 13, letterSpacing: 0.8 }}>2021 © Multivurse Development. Copyright </p>
+                        <p style={{ fontWeight: 300, fontSize: 13, letterSpacing: 0.6 }}>Github: https://github.com/Jonathan-Multivurse</p>
+                        <p style={{ fontWeight: 300, fontSize: 13, letterSpacing: 0.5 }}>Address: 5396 Quebec St, Vancouver, BC V5W 2N5</p>
+                        <p style={{ fontWeight: 300, fontSize: 13, letterSpacing: 0.8 }}>Phone no: +1-236-999-1330 </p>
                     </address>
                 </Grid>
                 <Grid item xs={12} md={3} className='align-self-end'>

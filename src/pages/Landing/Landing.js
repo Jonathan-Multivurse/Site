@@ -30,13 +30,15 @@ const BlueImageContainer = styled(Grid)(({ theme }) => ({
 const MainButton = styled(Button)(({ theme }) => ({
 	borderRadius: theme.spacing(4),
 	opacity: '1',
-	color: theme.palette.primary.main,
+	color: '#222',
 	width: '100%',
 	padding: '14px',
+	borderColor: '#222',
 	textTransform: 'capitalize',
 	fontWeight: 'normal',
 	'&:hover': {
 		backgroundColor: '#F7FAFD',
+		borderColor: '#222',
 	},
 	[theme.breakpoints.down('md')]:{
 		marginLeft: '20px',
@@ -45,7 +47,7 @@ const MainButton = styled(Button)(({ theme }) => ({
 }))
 
 const MainHeading = styled('h1')(({ theme }) => ({
-	color: theme.palette.primary.main,
+	color: '#222',
 	fontFamily: 'Roboto',
 	textAlign: 'left',
 	width: '100%',
@@ -56,12 +58,12 @@ const MainHeading = styled('h1')(({ theme }) => ({
 		textAlign: 'center',
 		paddingRight:'50px',
 		fontSize: 30,
-	}
+	},
 	
 }))
 
 const Paragraph = styled('h5')(({ theme }) => ({
-	color: theme.palette.primary.main,
+	color: '#222',
 	textAlign: "left",
 	fontFamily: 'Helvetica',
 	fontWeight: 100,
@@ -75,37 +77,42 @@ const Paragraph = styled('h5')(({ theme }) => ({
 	}
 }))
 
+const openInNewTab = (url) => {
+	const newWindow = window.open(url, '_blank')
+	if (newWindow) newWindow.opener = null
+  }
+
 
 function Landing() {
 	return (
 		<div>
 			<Grid container style={{ marginTop: '50px', }}>
 				<Grid item md={5} order={{xs:3, md:2}}>
-					<Grid container justifyContent='center' alignItems='center' style={{justifyContent:'center', alignItems:'center', paddingLeft:'50px', marginTop: '50px'}}>
+					<Grid container justifyContent='center' alignItems='center' style={{ justifyContent:'center', alignItems:'center', paddingLeft:'50px', marginTop: '100px'}}>
 						<Grid container fluid>
-							<Grid item lg={12}>
-							<MainHeading >Full Stack Engineer</MainHeading>
+							<Grid container lg={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+							<MainHeading >Full Stack Engineer | Data Scientist</MainHeading>
 							</Grid>
 						</Grid>
 						<Grid container  style={{ marginTop: '24px', paddingRight: '30px'}}>
 							<Grid item>
-							<Paragraph>I design, build, and maintain software across multiple technologies and industries.</Paragraph>
+							<Paragraph>I design, build, and maintain modern software applications and data analytics tools.</Paragraph>
 							</Grid>
 						</Grid>
 						<Grid container spacing={3} style={{paddingRight:'75px'}}>
-							<Grid item sm={8}>
-								<MainButton disableRipple variant="outlined" >Get Started</MainButton>
+							<Grid item md={7} xs={12}>
+								<MainButton disableRipple variant="outlined" onClick={() => openInNewTab('https://firebasestorage.googleapis.com/v0/b/site-360ad.appspot.com/o/Resume.pdf?alt=media&token=5764ca3b-cef0-405a-9350-d0adcadce1f4')}>Resume</MainButton>
 							</Grid>
-							<Grid item sm={4}>
-								<MainButton disableRipple variant="outlined">Inquire</MainButton>
+							<Grid item md={4} xs={12}>
+								<MainButton disableRipple variant="outlined" href="#contact">Email</MainButton>
 							</Grid>
 						</Grid>
 					</Grid>
 				</Grid>
 				<Grid item md={2} order={{xs:2}}/>
-				<Grid item md={5} style={{marginBottom: '75px', marginTop: '50px'}} order={{xs: 1, md: 3 }} className='align-self-center' >
+				<Grid item md={5} xs={12} style={{marginBottom: '75px', marginTop: '50px'}} order={{xs: 1, md: 3 }} className='align-self-center' >
 					<div>
-						<div style={{ position: 'relative' }}>
+						<div style={{ position: 'relative'}}>
 							<div >
 								<Grid item xs={7} style={{ position: 'relative'}}>
 									<img
@@ -122,7 +129,7 @@ function Landing() {
 										<ImageContainer>
 											<img
 												src="/assets/suit.png"
-												width='100%'
+												width='105%'
 												height='100%'
 												alt="Multivurse"
 											/>

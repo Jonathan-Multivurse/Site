@@ -34,7 +34,7 @@ export function LeftTitleBar({ title, content }) {
                     <Grid item xs={6}>
                         <h6 style={{ textAlign: 'left', color: '#FFFFFF', fontFamily: 'Roboto', fontSize: 16, fontWeight: 400, letterSpacing: 2 }}>{title}</h6>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item md ={6} xs={0}>
                         <hr style={{  height: 2, width: '70%', background:'transparent radial-gradient(closest-side at 50% 50%, #FF0091 70%, #0040FF 100%) 0% 0% no-repeat padding-box' }}></hr>
                     </Grid>
                 </Grid>
@@ -53,7 +53,7 @@ export function RightTitleBar({ title, content }) {
                     <Grid item xs={6}>
                         <h6 style={{ textAlign: 'left', color: '#FFFFFF', fontFamily: 'Roboto', fontSize: 16, fontWeight: 400, letterSpacing: 2  }}>{title}</h6>
                     </Grid>
-                    <Grid item xs={6} >
+                    <Grid item md ={6} xs={0} >
                         <hr style={{ color: "#BF0032FF", height: 2, width: '70%', background:'transparent radial-gradient(closest-side at 50% 50%, #FF0091 70%, #0040FF 100%) 0% 0% no-repeat padding-box' }}></hr>
                     </Grid>
                 </Grid>

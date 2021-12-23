@@ -1,13 +1,27 @@
-import { Grid, Avatar } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Nav, Navbar } from "react-bootstrap";
 import { Menu } from "@mui/icons-material";
-import { grey } from '@mui/material/colors';
 
 const navLinkStyles = {
-  color: "#003366",
+  color: "#222222",
   fontFamily: "helvetica",
   fontSize: "medium",
   fontWeight: 100,
+};
+
+const namecontainer = {
+  height: 50,
+  width: 200,
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  background: 'transparent linear-gradient(180deg, #000000 0%, #3B3B3B 100%) 0% 0% no-repeat padding-box',
+  color: "#ffffff",
+  fontFamily: "helvetica",
+  fontSize: "medium",
+  fontSize: 18,
+  fontWeight: 500,
+  borderRadius: 50
 };
 
 
@@ -17,9 +31,9 @@ function Header() {
       <Navbar light expand="lg">
         <Navbar.Brand href="/">
           <Grid container fluid>
-            <Avatar sx={{ bgcolor: grey[900], height: 50, width: 150 }} variant="rounded">
-              Jonathan D.
-            </Avatar>
+            <div style={namecontainer} variant="rounded">
+              Jonathan Daniels
+            </div>
           </Grid>
         </Navbar.Brand>
         <Navbar.Toggle
