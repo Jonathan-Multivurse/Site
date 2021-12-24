@@ -23,7 +23,9 @@ const RIGHT_TITLE_BAR = styled(Grid)(() => ({
     marginLeft: '10%',
     paddingLeft: '90px',
     paddingTop: '30px',
-    paddingBottom: '20px'
+    paddingBottom: '20px',
+    justifyContent: 'center',
+
 }))
 
 export function LeftTitleBar({ title, content }) {

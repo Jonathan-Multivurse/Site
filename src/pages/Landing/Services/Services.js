@@ -119,7 +119,7 @@ export default function Services() {
                                     <Button onClick={() => setSelectedService(7)} style={{ background: 'transparent' }} disableRipple>
                                         <Grid contaier style={{ margin: 8 }} className={selectedService === 7 ? 'selected-service' : ''}>
                                             <ServiceImage
-                                                source='/assets/TenserFlow.jpeg'
+                                                source='/assets/Tenserflow.jpeg'
                                             />
                                         </Grid>
                                     </Button>
@@ -165,11 +165,7 @@ export default function Services() {
                 </Grid>
 
             </Grid >
-            <Grid container>
-                <Grid item>
-                    <hr style={{ marginLeft: '20%', marginTop: '30px', color: '#003366', width: '70%', marginRight: '10%' }} ></hr>
-                </Grid>
-            </Grid>
+            
         </Grid >
     )
 }

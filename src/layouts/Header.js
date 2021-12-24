@@ -38,14 +38,14 @@ function Header() {
         </Navbar.Brand>
         <Navbar.Toggle
           style={{
-            color: "#003366",
+            color: "#222",
             boxShadow: "none",
             backgroundColor: "transparent",
             border: "none",
           }}
           aria-controls="basic-navbar-nav"
         >
-          <Menu style={{ fontSize: "35px" }} />
+          <Menu style={{ fontSize: "32px" }} />
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>

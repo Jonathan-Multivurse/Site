@@ -12,12 +12,16 @@ const FOOTER = styled(Grid)(() => ({
     color: '#fff',
     paddingTop: '50px'
 }))
-const VerticalLine = styled(Grid)(({ height }) => ({
+const VerticalLine = styled(Grid)(({ height, theme }) => ({
     opacity: 0.4,
     height: height,
-    borderLeftWidth: '2px',
+    borderWidth: '2px',
     borderLeftStyle: 'solid',
-    borderImage: 'linear-gradient(to top left,#0040FF , #FF0091) 1 100%'
+    borderImage: 'linear-gradient(to top left,#0040FF , #FF0091) 1 100%',
+    [theme.breakpoints.down('sm')]: {
+        borderWidth: '1px',
+    }
+    
 }))
 export default function Footer() {
     return (

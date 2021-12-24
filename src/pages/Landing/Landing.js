@@ -101,7 +101,7 @@ function Landing() {
 						</Grid>
 						<Grid container spacing={3} style={{paddingRight:'75px'}}>
 							<Grid item md={7} xs={12}>
-								<MainButton disableRipple variant="outlined" onClick={() => openInNewTab('https://firebasestorage.googleapis.com/v0/b/site-360ad.appspot.com/o/Resume.pdf?alt=media&token=5764ca3b-cef0-405a-9350-d0adcadce1f4')}>Resume</MainButton>
+								<MainButton disableRipple variant="outlined" onClick={() => openInNewTab('https://firebasestorage.googleapis.com/v0/b/site-360ad.appspot.com/o/Resume.pdf?alt=media&token=396b7c21-3f17-42c3-9183-04665a607bfe')}>Resume</MainButton>
 							</Grid>
 							<Grid item md={4} xs={12}>
 								<MainButton disableRipple variant="outlined" href="#contact">Email</MainButton>

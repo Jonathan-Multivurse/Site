@@ -9,19 +9,19 @@ import { WORK_CARD_CONTENT } from './constants';
 import { useMediaQuery } from '@mui/material';
 
 const Circle = styled(Grid)(() => ({
-    border: '1px solid #003366',
+    border: '1px solid #222',
     borderRadius: '100%',
     width: '20px',
     height: '20px',
 }))
 
 const Circle1 = styled(Grid)(() => ({
-    border: '1px solid #003366',
+    border: '1px solid #222',
     borderRadius: '100%',
     width: '35px',
     height: '35px',
     justifyContent: 'center',
-    borderRight: '1px solid black'
+    borderRight: '1px solid #222'
 }))
 
 const EggShapedImageContainer = styled(Grid)(({ theme }) => ({
@@ -36,12 +36,12 @@ export default function Work() {
     const md = useMediaQuery(theme => theme.breakpoints.down('md'))
     return (
         <Grid id="work">
-            <Grid container justifyContent='end'>
-                <Grid xs={10} md={5} item>
+            <Grid container justifyContent='flex-end'>
+                <Grid xs={10} md={5} >
                     <RightTitleBar title='PORTFOLIO' content='PAST PROJECTS I WORKED ON' />
                 </Grid>
             </Grid>
-            <Grid container>
+            <Grid container style={{marginTop: 50}}>
                 <Grid item order={md ? 2 : 1} xs={10} lg={8}>
                     <Grid container>
                         <Grid item md={6}>
@@ -51,6 +51,7 @@ export default function Work() {
                                     <Grid container>
                                         <WorkCard
                                             cardContent={WORK_CARD_CONTENT[selectedPage][0]}
+                                            link='https://www.goosefx.io/'
                                         />
                                     </Grid>
                                 </Grid>
@@ -62,6 +63,7 @@ export default function Work() {
                                 <Grid item xs={9} >
                                     <WorkCard
                                         cardContent={WORK_CARD_CONTENT[selectedPage][1]}
+                                        link='https://globaloutliers.com/'
                                     />
                                 </Grid>
                             </Grid>
@@ -75,6 +77,7 @@ export default function Work() {
                                 <Grid item xs={9} >
                                     <WorkCard
                                         cardContent={WORK_CARD_CONTENT[selectedPage][2]}
+                                        link='https://damogo.co/en'
                                     />
                                 </Grid>
                             </Grid>
@@ -86,6 +89,7 @@ export default function Work() {
                                 <Grid item xs={9}>
                                     <WorkCard
                                         cardContent={WORK_CARD_CONTENT[selectedPage][3]}
+                                        link='https://www.snibbe.com/apps'
                                     />
                                 </Grid>
                             </Grid>
@@ -114,38 +118,33 @@ export default function Work() {
                                 <Circle />
                             </Grid>
                         </Grid>
-                        <Grid item xs={1} order={3}>
-                            <Grid container  className={selectedPage === 2 ? 'selected-page' : ''} style={{width:'22px'}}>
-                                <Circle />
-                            </Grid>
-                        </Grid>
 
                         <Grid item xs={3} sm={2} order={md ? 4 : 3} style={{marginTop: md ? 0  : 32}}>
                             
                             <Button onClick={() => {
-                                selectedPage < 2 ?
-                                    setSelectedPage(selectedPage + 1) : setSelectedPage(0)
+                                // selectedPage < 1 ?
+                                //     setSelectedPage(selectedPage + 1) : setSelectedPage(0)
                             }
                             } style={{ background: 'transparent' }} disableRipple>
                                 <Circle1>
-                                    <ArrowRightTwoTone fontSize='large' />
+                                    <ArrowRightTwoTone fontSize='large' style={{color: '#222'}} />
                                 </Circle1>
                             </Button>
                         </Grid>
                         <Grid item xs={3} sm={2} order={md ? 3 : 4}>
                             <Button onClick={() => {
-                                selectedPage > 0 ?
-                                    setSelectedPage(selectedPage - 1) : setSelectedPage(2)
+                                // selectedPage > 0 ?
+                                //     setSelectedPage(selectedPage - 1) : setSelectedPage(1)
                             }
                             } style={{ background: 'transparent' }} disableRipple>
                                 <Circle1>
-                                    <ArrowLeftTwoTone fontSize='large' />
+                                    <ArrowLeftTwoTone fontSize='large' style={{color: '#222'}}/>
                                 </Circle1>
                             </Button>
                         </Grid>
                         <Grid item xs={3} sm={5} order={5}>
                             {md ?
-                                <hr color='#003366' ></hr>
+                                <hr color='#222' ></hr>
                                 : <Grid container direction='column'>
                                     <Grid item style={{ height: '500px', marginTop: '32px', borderLeft: '1px solid #003366', width: '1px' }} className='align-self-end' />
                                 </Grid>}
@@ -156,9 +155,9 @@ export default function Work() {
                     <Grid container className='justify-content-end'>
                         <img
                             src='/assets/Cy1-Cropped.png'
-                            width='60%'
+                            width='50%'
                             alt=''
-                            height='75%' />
+                            height='50%' />
                     </Grid>
                 </EggShapedImageContainer>
             </Grid>
