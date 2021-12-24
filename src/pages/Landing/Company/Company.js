@@ -106,7 +106,7 @@ export default function Company() {
     const largeScreen = useMediaQuery(theme => theme.breakpoints.up('md'))
     const [selected, setSelected] = useState(0)
     return (
-        <div style={{ marginTop: '60px' }} id="company">
+        <div style={{ marginTop: '60px' }} id="craft">
             <Grid container>
                 <Grid item md={5} xs={10}>
                     <LeftTitleBar title={'CRAFT'} content={'WHAT I DO IN A NUTSHELL'} />

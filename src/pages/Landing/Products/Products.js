@@ -37,7 +37,7 @@ export default function Products() {
 
     const smallScreen = useMediaQuery(theme => theme.breakpoints.down('sm')) 
     return (
-        <Grid style={{ color: '#222' }} id="products">
+        <Grid style={{ color: '#222' }} id="expertise">
             <Grid container justifyContent={'flex-end'}>
                 <Grid item xs={10} md={5}>
                     <RightTitleBar title='EXPERTISE' content='AREAS OF SPECIALIZATION' />

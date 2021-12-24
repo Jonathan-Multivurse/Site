@@ -8,7 +8,7 @@ import { EggShapedImageContainer } from '../../../components/EggShapedImageConta
 export default function Services() {
     const [selectedService, setSelectedService] = useState(0)
     return (
-        <Grid container id="services">
+        <Grid container id="skills">
             <Grid container>
                 <Grid item md={5} xs={10} >
                     <LeftTitleBar title={'SKILLS'} content={'CORE TECHNICAL ABILITIES'} />

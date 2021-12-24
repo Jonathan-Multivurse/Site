@@ -35,7 +35,7 @@ export default function Work() {
     const [selectedPage, setSelectedPage] = useState(0)
     const md = useMediaQuery(theme => theme.breakpoints.down('md'))
     return (
-        <Grid id="work">
+        <Grid id="portfolio">
             <Grid container justifyContent='flex-end'>
                 <Grid xs={10} md={5} >
                     <RightTitleBar title='PORTFOLIO' content='PAST PROJECTS I WORKED ON' />
