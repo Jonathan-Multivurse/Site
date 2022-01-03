@@ -51,7 +51,7 @@ export default function Work() {
                                     <Grid container>
                                         <WorkCard
                                             cardContent={WORK_CARD_CONTENT[selectedPage][0]}
-                                            link='https://www.goosefx.io/'
+                                            link={WORK_CARD_CONTENT[selectedPage][0].link}
                                         />
                                     </Grid>
                                 </Grid>
@@ -63,7 +63,7 @@ export default function Work() {
                                 <Grid item xs={9} >
                                     <WorkCard
                                         cardContent={WORK_CARD_CONTENT[selectedPage][1]}
-                                        link='https://globaloutliers.com/'
+                                        link={WORK_CARD_CONTENT[selectedPage][1].link}
                                     />
                                 </Grid>
                             </Grid>
@@ -77,7 +77,7 @@ export default function Work() {
                                 <Grid item xs={9} >
                                     <WorkCard
                                         cardContent={WORK_CARD_CONTENT[selectedPage][2]}
-                                        link='https://damogo.co/en'
+                                        link={WORK_CARD_CONTENT[selectedPage][2].link}
                                     />
                                 </Grid>
                             </Grid>
@@ -89,7 +89,7 @@ export default function Work() {
                                 <Grid item xs={9}>
                                     <WorkCard
                                         cardContent={WORK_CARD_CONTENT[selectedPage][3]}
-                                        link='https://www.snibbe.com/apps'
+                                        link={WORK_CARD_CONTENT[selectedPage][3].link}
                                     />
                                 </Grid>
                             </Grid>
@@ -122,8 +122,8 @@ export default function Work() {
                         <Grid item xs={3} sm={2} order={md ? 4 : 3} style={{marginTop: md ? 0  : 32}}>
                             
                             <Button onClick={() => {
-                                // selectedPage < 1 ?
-                                //     setSelectedPage(selectedPage + 1) : setSelectedPage(0)
+                                selectedPage < 1 ?
+                                    setSelectedPage(selectedPage + 1) : setSelectedPage(0)
                             }
                             } style={{ background: 'transparent' }} disableRipple>
                                 <Circle1>
@@ -133,8 +133,8 @@ export default function Work() {
                         </Grid>
                         <Grid item xs={3} sm={2} order={md ? 3 : 4}>
                             <Button onClick={() => {
-                                // selectedPage > 0 ?
-                                //     setSelectedPage(selectedPage - 1) : setSelectedPage(1)
+                                selectedPage > 0 ?
+                                    setSelectedPage(selectedPage - 1) : setSelectedPage(1)
                             }
                             } style={{ background: 'transparent' }} disableRipple>
                                 <Circle1>
