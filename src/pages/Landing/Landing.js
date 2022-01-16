@@ -53,6 +53,7 @@ const MainHeading = styled('h1')(({ theme }) => ({
 	width: '100%',
 	paddingTop: '25px',
 	fontWeight: 100,
+	lineHeight: 1.5,
 	fontSize: 40,
 	[theme.breakpoints.down('md')]: {
 		textAlign: 'center',
@@ -91,7 +92,7 @@ function Landing() {
 					<Grid container justifyContent='center' alignItems='center' style={{ justifyContent:'center', alignItems:'center', paddingLeft:'50px', marginTop: '100px'}}>
 						<Grid container fluid>
 							<Grid container lg={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-							<MainHeading >Full Stack Engineer | Data Scientist</MainHeading>
+							<MainHeading >Full Stack Engineer <br/>Data Science | M. Learning</MainHeading>
 							</Grid>
 						</Grid>
 						<Grid container  style={{ marginTop: '24px', paddingRight: '30px'}}>
@@ -103,7 +104,7 @@ function Landing() {
 							<Grid item md={7} xs={12}>
 								<MainButton disableRipple variant="outlined" onClick={() => openInNewTab('https://firebasestorage.googleapis.com/v0/b/site-360ad.appspot.com/o/Resume.pdf?alt=media&token=396b7c21-3f17-42c3-9183-04665a607bfe')}>Resume</MainButton>
 							</Grid>
-							<Grid item md={4} xs={12}>
+							<Grid item md={5} xs={12}>
 								<MainButton disableRipple variant="outlined" href="#contact">Email</MainButton>
 							</Grid>
 						</Grid>

@@ -34,21 +34,21 @@ export const WORK_CARD_CONTENT = [
         },
         {
             title: 'RUBIX',
-            content: 'A better way to trade cryptocurrency. Rubix provides a faster & secure way to buy or swap crypto.',
+            content: 'Rubix is a better way to trade cryptocurrency. It provides a faster & secure way to buy crypto.',
             imgSource: '/assets/rubix.png',
             link: 'https://rubix.io/'
         },
         {
-            title: 'COMING SOON',
-            content: 'Lorem ipsum is simply dummy\nLorem ipsum is simply dummy\n Lorem ipsum is simply dummy\n  Lorem ipsum is simply dummy',
-            imgSource: '/assets/Yono.png',
-            link: ''
+            title: 'INNOVATION UP',
+            content: 'Build with leverage by implementing microservice design patterns and in-house code generators, today!',
+            imgSource: '/assets/innov.png',
+            link: 'https://innovationupstream.com/'
         },
         {
-            title: 'COMING SOON',
-            content: 'Lorem ipsum is simply dummy\nLorem ipsum is simply dummy\n Lorem ipsum is simply dummy\n  Lorem ipsum is simply dummy',
-            imgSource: '/assets/panda.png',
-            link: ''
+            title: 'MIMOBIL',
+            content: 'Support your employee\'s health and work-life balance. Book services that come right to your office.',
+            imgSource: '/assets/mimobl.png',
+            link: 'https://mimobl.com/'
         },
     ],
 ]
