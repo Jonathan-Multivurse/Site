@@ -92,7 +92,7 @@ function Landing() {
 					<Grid container justifyContent='center' alignItems='center' style={{ justifyContent:'center', alignItems:'center', paddingLeft:'50px', marginTop: '100px'}}>
 						<Grid container fluid>
 							<Grid container lg={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-							<MainHeading >Full Stack Engineer <br/>Data Science | M. Learning</MainHeading>
+							<MainHeading >Full Stack Engineer <br/>Data Science || M. Learning</MainHeading>
 							</Grid>
 						</Grid>
 						<Grid container  style={{ marginTop: '24px', paddingRight: '30px'}}>
